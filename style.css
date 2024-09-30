@@ -1,0 +1,193 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d0e2ff);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.todoapp {
+    border: 1px solid #c5c5c5;
+    background-color: white;
+    width: 40%;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 14%;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 45px;
+}
+
+.main {
+    text-align: center;
+    margin-top: 30px;
+}
+
+input#input {
+    padding: 10px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    border: 1px solid #b5b5b5;
+    width: 70%;
+    color: #424242;
+    background-color: #f1f1f1;
+}
+
+::placeholder {
+    color: #3e3e3e;
+    font-size: 1.6rem;
+}
+
+button.addbutton {
+    padding: 11px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    background: rgb(76, 212, 21);
+    color: white;
+    border: 1px solid bisque;
+    margin-left: 5px;
+}
+
+ol#ol {
+    margin-top: 40px;
+}
+
+li {
+    font-size: 1.7rem;
+    border: 1px solid #afafaf;
+    color: #3e3e3e;
+    padding: 15px 10px 15px;
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 49px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+}
+
+.btn-div {
+    display: inline;
+    float: right;
+    margin-top: -6px;
+}
+
+button.deletebutton, button.editbutton {
+    padding: 8px 23px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+button.deletebutton {
+    background: red;
+}
+
+button.editbutton {
+    background: rgb(38, 0, 255);
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .todoapp {
+        width: 50%; /* Slightly larger width for better spacing */
+        margin-top: 10%; /* Adjust top margin */
+    }
+
+    h1 {
+        font-size: 3.5rem; /* Increase header size */
+    }
+
+    input#input {
+        width: 60%; /* More space for input */
+        font-size: 1.8rem; /* Larger font size */
+    }
+
+    button.addbutton {
+        font-size: 1.7rem; /* Slightly larger button */
+        padding: 12px; /* More padding for buttons */
+    }
+
+    li {
+        font-size: 1.8rem; /* Increase font size for list items */
+        width: 80%; /* More width for list items */
+    }
+
+    button.deletebutton, button.editbutton {
+        padding: 10px 16px; /* Increase button padding */
+        font-size: 1.4rem; /* Larger font size for buttons */
+    }
+}
+
+/* Responsive Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .todoapp {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input#input {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    button.addbutton {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    li {
+        font-size: 1.5rem;
+        width: 80%;
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 480px) {
+    .todoapp {
+        width: 90%;
+        margin-top: 8%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input#input {
+        width: 50%;
+        font-size: 1.4rem;
+    }
+
+    button.addbutton {
+        font-size: 1.4rem;
+        padding: 8px;
+    }
+
+    li {
+        font-size: 1.4rem;
+        width: 75%;
+    }
+
+    button.deletebutton, button.editbutton {
+        padding: 6px 18px;
+        font-size: 1.2rem;
+    }
+}
